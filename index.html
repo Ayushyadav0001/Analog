@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analog Watch</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #watch {
+      width: 200px;
+      height: 200px;
+      border: 10px solid #333;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .hand {
+      position: absolute;
+      transform-origin: 50% 100%;
+      background: #333;
+    }
+
+    #hour {
+      height: 50px;
+      width: 5px;
+      top: 50px;
+      left: 97.5px;
+    }
+
+    #minute {
+      height: 80px;
+      width: 3px;
+      top: 20px;
+      left: 98.5px;
+    }
+
+    #second {
+      height: 90px;
+      width: 1px;
+      top: 10px;
+      left: 99.5px;
+      background: red;
+    }
+
+    .number {
+      position: absolute;
+      font-size: 12px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="watch">
+    <div class="hand" id="hour"></div>
+    <div class="hand" id="minute"></div>
+    <div class="hand" id="second"></div>
+
+    <!-- Numbers -->
+    <div class="number" style="top: 20px; left: 90px;">12</div>
+    <div class="number" style="top: 90px; left: 20px;">9</div>
+    <div class="number" style="bottom: 20px; left: 90px;">6</div>
+    <div class="number" style="top: 90px; right: 20px;">3</div>
+  </div>
+
+  <script src="index.js">
+   
+  </script>
+</body>
+</html>
